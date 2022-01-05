@@ -10,10 +10,10 @@ public class PlayerController : MonoBehaviour
     public float speed = 700; //speed of the ball
     private int score = 0; //score = coins
     public int health = 5; //health of the ball
-    public Text scoreText;
-    public Text healthText;
-    public Text WinLoseT;
-    public Image WinLoseBG;
+    public Text scoreText; // score text
+    public Text healthText; //health text
+    public Text WinLoseT; //win or lose text
+    public Image WinLoseBG; //win or lose background color
 
     //excecution of the movement of the ball once per frame
     //Input.GetKey = receives the Key od the movement(WASD)
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(LoadScene(3));
         }
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -75,16 +76,20 @@ public class PlayerController : MonoBehaviour
             score = 0;
         }
     }
+
     // Update the score (count) text
     void SetScoreText()
     {
         scoreText.text = "Score: " + score.ToString();
     }
+
     // Update the healt (count) text
     void SetHealthText()
     {
         healthText.text = "Health: " + health.ToString();
     }
+
+    // Reload the maze scene after 3 seconds of being called
     IEnumerator LoadScene(float seconds)
     {
         yield return new WaitForSeconds(3);

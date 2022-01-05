@@ -3,7 +3,10 @@ guid: 086dedb7cef00b346a78661491abc5c1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - trapMat: {instanceID: 0}
+  - goalMat: {instanceID: 0}
+  - colorblindMode: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

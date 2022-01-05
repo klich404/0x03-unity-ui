@@ -1347,7 +1347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 238543730}
-  speed: 700
+  speed: 1000
   health: 5
   scoreText: {fileID: 1850255087}
   healthText: {fileID: 1586118650}
