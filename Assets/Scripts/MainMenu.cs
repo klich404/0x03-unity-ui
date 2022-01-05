@@ -30,5 +30,6 @@ public class MainMenu : MonoBehaviour
     public void QuitMaze()
     {
         Debug.Log("Quit Game");
+        Application.Quit();
     }
 }
